@@ -5,17 +5,18 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Login - eCommerce Bootstrap4 Template</title>
-        <!-- <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <title>Blog-eCommerce Bootstrap4 Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/assets/img/favicon.png">
 		
 		<!-- all css here -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/animate.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/owl.carousel.min.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/chosen.min.css">
+         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/icofont.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/ionicons.min.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/material-design-iconic-font.min.css">
@@ -30,10 +31,10 @@
 
             <!-- Add your site or application content here -->
             
-              <!--organicfood wrapper start--> 
-            <div class="organic_food_wrapper blog_details">
+            <!--organicfood wrapper start--> 
+            <div class="organic_food_wrapper blog_page">
                 <!--Header start-->
-                <header class="header">
+                <header class="header sticky-header">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -279,8 +280,8 @@
                 </header>
                 <!--Header end-->
             </div>
-             <!--organicfood wrapper end-->
-             
+             <!--organicfood wrapper end--> 
+            
             <!--breadcrumb area start-->
             <div class="breadcrumb_container">
                 <div class="container-fluid">
@@ -288,8 +289,10 @@
                         <div class="col-12">     
                             <nav>
                         <ul>
-                            <li><a href="#">Home</a> ></li>
-                            <li>login</li>
+                            <li>
+                                <a href="index.html">Home ></a>
+                            </li>
+                            <li>Blog</li>
                         </ul>
                     </nav>
                         </div>
@@ -297,52 +300,118 @@
                 </div>        
             </div>
              <!--breadcrumb area end-->
-            
-             
-           
-            <!--login section start-->
-            <div class="page_login_section">
+          
+           <!--blog area start-->
+           <div class="blog_list_area">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
-                            <div class="login_page_form">
-                                <form action="#">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="input_text">
-                                            	<label for="name">Username or email <span>*</span></label>
-                                            	<input id="name" type="text">    
-                                            </div>
-                                        </div>
-                                         <div class="col-12">
-                                            <div class="input_text">
-												<label for="password">Passwords <span>*</span></label>
-												<input id="password" type="password"> 
-											</div>   
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="login_submit">
-                                            	<input class="inline" value="Login" name="Login" type="submit">
-												<label class="inline" for="rememberme">
-													<input id="rememberme" type="checkbox">
-													Remember me	
-												</label>   
-                                            </div> 
-                                        </div>      
-                                    </div>
-                                </form>    
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="single_blog_list">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html"><img src="${pageContext.request.contextPath}/assets/img/blog/5.jpg" alt=""></a>    
+                                </div>
+                                <div class="post__content">
+                                    <h3><a href="blog-details.html">There are many variations of this Lorem Ipsum available.</a></h3>
+                                    <ul>
+                                        <li><a href="blog-details.html">Read More</a></li>
+                                        <li class="post_date">July 10, 2018</li>
+                                    </ul>    
+                                </div>
                             </div>    
-                        </div>    
+                        </div> 
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="single_blog_list">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html"><img src="${pageContext.request.contextPath}/assets/img/blog/3.jpg" alt=""></a>    
+                                </div>
+                                <div class="post__content">
+                                    <h3><a href="blog-details.html">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</a></h3>
+                                    <ul>
+                                        <li><a href="blog-details.html">Read More</a></li>
+                                        <li class="post_date">July 10, 2018</li>
+                                    </ul>    
+                                </div>
+                            </div>    
+                        </div> 
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="single_blog_list">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html"><img src="${pageContext.request.contextPath}/assets/img/blog/4.jpg" alt=""></a>    
+                                </div>
+                                <div class="post__content">
+                                    <h3><a href="blog-details.html">Neque porro quisquam est, qui dolorem ipsum quia.</a></h3>
+                                    <ul>
+                                        <li><a href="blog-details.html">Read More</a></li>
+                                        <li class="post_date">July 10, 2018</li>
+                                    </ul>    
+                                </div>
+                            </div>    
+                        </div> 
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="single_blog_list">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html"><img src="${pageContext.request.contextPath}/assets/img/blog/2.jpg" alt=""></a>    
+                                </div>
+                                <div class="post__content">
+                                    <h3><a href="blog-details.html">Ut enim ad minima veniam, quis nostrum exercitationem.</a></h3>
+                                    <ul>
+                                        <li><a href="blog-details.html">Read More</a></li>
+                                        <li class="post_date">July 10, 2018</li>
+                                    </ul>    
+                                </div>
+                            </div>    
+                        </div> 
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="single_blog_list">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html"><img src="${pageContext.request.contextPath}/assets/img/blog/6.jpg" alt=""></a>    
+                                </div>
+                                <div class="post__content">
+                                    <h3><a href="blog-details.html">Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</a></h3>
+                                    <ul>
+                                        <li><a href="blog-details.html">Read More</a></li>
+                                        <li class="post_date">July 10, 2018</li>
+                                    </ul>    
+                                </div>
+                            </div>    
+                        </div> 
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="single_blog_list">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html"><img src="${pageContext.request.contextPath}/assets/img/blog/1.jpg" alt=""></a>    
+                                </div>
+                                <div class="post__content">
+                                    <h3><a href="blog-details.html"> Duis aute irure dolor in reprehenderit in voluptate  esse.</a></h3>
+                                    <ul>
+                                        <li><a href="blog-details.html">Read More</a></li>
+                                        <li class="post_date">July 10, 2018</li>
+                                    </ul>    
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-12">
+                            <div class="pagination_content">
+                               
+                                <ul class="pagination">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li class="pagination_three"><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                </ul>
+                               
+                            </div>      
+                        </div>                        
                     </div>    
-                </div>  
-            </div>
-            
-            <!--login section end-->
+                </div>   
+           </div>
+           <!--blog area end-->
            
+            
+                
             <!--organicfood wrapper start--> 
-            <div class="footer_food_wrapper">         
-                <!-- footer start -->
-                <footer class="footer pt-90 my-account">
+            <div class="footer_food_wrapper blog_food">    
+                 <!-- footer start -->
+                <footer class="footer pt-90">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-3 col-md-12 col-xs-12">
@@ -465,9 +534,23 @@
                     
                 </footer>
                 
-                <!-- footer end -->  
+                <!-- footer end -->
+                
+                
+                
             </div>
-
+           
+           
+           
+           
+           
+           
+           <!--organicfood wrapper end--> 
+            
+    
+            
+  
+		
 		
 		<!-- all js here -->
         <script src="${pageContext.request.contextPath}/assets/js/vendor/jquery-1.12.0.min.js"></script>

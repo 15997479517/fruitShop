@@ -5,11 +5,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Login - eCommerce Bootstrap4 Template</title>
-        <!-- <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <title>Cart - eCommerce Bootstrap4 Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/assets/img/favicon.png">
 		
 		<!-- all css here -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css">
@@ -30,10 +30,10 @@
 
             <!-- Add your site or application content here -->
             
-              <!--organicfood wrapper start--> 
+            <!--organicfood wrapper start--> 
             <div class="organic_food_wrapper blog_details">
-                <!--Header start-->
-                <header class="header">
+               <!--Header start-->
+                <header class="header sticky-header">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -288,8 +288,8 @@
                         <div class="col-12">     
                             <nav>
                         <ul>
-                            <li><a href="#">Home</a> ></li>
-                            <li>login</li>
+                            <li><a href="index.html">Home ></a></li>
+                            <li>Cart</li>
                         </ul>
                     </nav>
                         </div>
@@ -297,52 +297,101 @@
                 </div>        
             </div>
              <!--breadcrumb area end-->
-            
-             
-           
-            <!--login section start-->
-            <div class="page_login_section">
+            <div class="cart_main_area">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
-                            <div class="login_page_form">
-                                <form action="#">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="input_text">
-                                            	<label for="name">Username or email <span>*</span></label>
-                                            	<input id="name" type="text">    
+                        <div class="col-12">
+                            <form action="#">  
+                                <div class="table-content table-responsive">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="img-thumbnail">Image</th>
+                                                <th class="product-name">Product</th>
+                                                 <th class="product-price">Price</th>
+                                                <th class="product-quantity">Quantity</th>
+                                                <th class="product-subtotal">Total</th>
+                                                <th class="product-remove">Remove</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="product-thumbnail"><img src="${pageContext.request.contextPath}/assets/img/product/1.jpg" alt=""></td>
+                                                <td class="product-name"><a href="#">Vestibulum suscipit</a></td>
+                                                <td class="product-price"><span class="amount">£165.00</span></td>
+                                                <td class="product-quantity">
+                                                    <div class="quickview_plus_minus quick_cart">
+                                                        <div class="quickview_plus_minus_inner">
+                                                            <div class="cart-plus-minus cart_page">
+                                                                <input type="text" value="02" name="qtybutton" class="cart-plus-minus-box">
+                                                            </div>
+                                                        </div>    
+                                                    </div> 
+                                                </td>
+                                                <td class="product-subtotal">£165.00</td>
+                                                <td class="product-remove"><a href="#">X</a></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td class="product-thumbnail"><img src="${pageContext.request.contextPath}/assets/img/product/4.jpg" alt=""></td>
+                                                <td class="product-name"><a href="#">Vestibulum dictum magna</a></td>
+                                                <td class="product-price"><span class="amount">£165.00</span></td>
+                                                <td class="product-quantity">
+                                                    <div class="quickview_plus_minus quick_cart">
+                                                        <div class="quickview_plus_minus_inner">
+                                                            <div class="cart-plus-minus cart_page">
+                                                                <input type="text" value="02" name="qtybutton" class="cart-plus-minus-box">
+                                                            </div>
+                                                        </div>    
+                                                    </div> 
+                                                </td>
+                                                <td class="product-subtotal">£165.00</td>
+                                                <td class="product-remove"><a href="#">X</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row table-responsive_bottom">
+                                    <div class="col-lg-7 col-sm-7 col-md-7">
+                                       <div class="buttons-carts">
+                                            <input value="Update Cart" type="submit"> 
+                                            <a href="#">Continue Shopping</a>   
+                                        </div> 
+                                        <div class="buttons-carts coupon">
+                                            <h3>Coupon</h3>
+                                            <p>Enter your coupon code if you have one.</p>
+                                            <input placeholder="Coupon code" type="text"> 
+                                            <input value="Apply Coupon" type="submit">     
+                                        </div>
+                                    </div> 
+                                    <div class="col-lg-5 col-sm-5 col-md-5">
+                                         <div class="cart_totals  text-right">
+                                            <h2>Cart Totals</h2>
+                                            <div class="cart-subtotal">
+                                                <span>Subtotal</span>    
+                                                <span>£215.00</span>    
                                             </div>
-                                        </div>
-                                         <div class="col-12">
-                                            <div class="input_text">
-												<label for="password">Passwords <span>*</span></label>
-												<input id="password" type="password"> 
-											</div>   
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="login_submit">
-                                            	<input class="inline" value="Login" name="Login" type="submit">
-												<label class="inline" for="rememberme">
-													<input id="rememberme" type="checkbox">
-													Remember me	
-												</label>   
-                                            </div> 
-                                        </div>      
-                                    </div>
-                                </form>    
-                            </div>    
+                                            <div class="order-total">
+                                                <span><strong>Total</strong> </span>          
+                                                <span><strong>£215.00 </strong> </span>
+                                            </div>
+                                            <div class="wc-proceed-to-checkout">
+                                                <a href="#">Proceed to Checkout</a>
+                                            </div>
+                                         </div>    
+                                    </div>    
+                                </div>
+                            </form>         
                         </div>    
                     </div>    
-                </div>  
+                </div>   
             </div>
-            
-            <!--login section end-->
-           
+        
             <!--organicfood wrapper start--> 
             <div class="footer_food_wrapper">         
                 <!-- footer start -->
-                <footer class="footer pt-90 my-account">
+                <footer class="footer pt-80">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-3 col-md-12 col-xs-12">
@@ -465,9 +514,23 @@
                     
                 </footer>
                 
-                <!-- footer end -->  
+                <!-- footer end -->
+                
+                
+                
             </div>
-
+           
+           
+           
+           
+           
+           
+           <!--organicfood wrapper end--> 
+            
+    
+            
+  
+		
 		
 		<!-- all js here -->
         <script src="${pageContext.request.contextPath}/assets/js/vendor/jquery-1.12.0.min.js"></script>

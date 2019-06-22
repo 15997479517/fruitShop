@@ -5,17 +5,18 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Login - eCommerce Bootstrap4 Template</title>
-        <!-- <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <title>Contact- eCommerce Bootstrap4 Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/assets/img/favicon.png">
 		
 		<!-- all css here -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/animate.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/owl.carousel.min.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/chosen.min.css">
+       <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/icofont.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/ionicons.min.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/material-design-iconic-font.min.css">
@@ -30,10 +31,10 @@
 
             <!-- Add your site or application content here -->
             
-              <!--organicfood wrapper start--> 
+             <!--organicfood wrapper start--> 
             <div class="organic_food_wrapper blog_details">
                 <!--Header start-->
-                <header class="header">
+                <header class="header sticky-header">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -288,8 +289,10 @@
                         <div class="col-12">     
                             <nav>
                         <ul>
-                            <li><a href="#">Home</a> ></li>
-                            <li>login</li>
+                            <li>
+                                <a href="index.html">Home ></a>
+                            </li>
+                            <li>contact</li>
                         </ul>
                     </nav>
                         </div>
@@ -297,52 +300,158 @@
                 </div>        
             </div>
              <!--breadcrumb area end-->
-            
              
            
-            <!--login section start-->
-            <div class="page_login_section">
+            <!--contact area css satrt-->
+            <div class="contact_area ptb-90">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
-                            <div class="login_page_form">
-                                <form action="#">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="input_text">
-                                            	<label for="name">Username or email <span>*</span></label>
-                                            	<input id="name" type="text">    
-                                            </div>
-                                        </div>
-                                         <div class="col-12">
-                                            <div class="input_text">
-												<label for="password">Passwords <span>*</span></label>
-												<input id="password" type="password"> 
-											</div>   
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="login_submit">
-                                            	<input class="inline" value="Login" name="Login" type="submit">
-												<label class="inline" for="rememberme">
-													<input id="rememberme" type="checkbox">
-													Remember me	
-												</label>   
-                                            </div> 
-                                        </div>      
+                        <div class="col-lg-8 col-md-7">
+                            <div class="contact_map_wrapper">
+                                <div class="contact_map mb-40">
+                                    <!-- Contact Map Start -->
+									<div id="contact-map"></div>
+									<!-- Contact Map End -->   
+                                </div>
+                                <div class="contact-message">
+                                    <div class="contact_title">
+                                        <h4>Contact Information</h4>    
                                     </div>
-                                </form>    
+                                    <form id="contact-form" method="post"  action="${pageContext.request.contextPath}/assets/mail.php">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <label for="contact_n">Name<span>*</span></label>
+                                                <input name="name" id="contact_n" type="text">    
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label for="contact_n2">Email<span>*</span></label>
+                                                <input name="email" id="contact_n2" type="email">    
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label for="contact_n3">Telephone</label>
+                                                <input name="phone" id="contact_n3" type="text">    
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label for="contact_n4">subject</label>
+                                                <input name="subject" id="contact_n4" type="text">    
+                                            </div>
+                                           <div class="col-12">
+                                                <div class="contact-textarea">
+                                                    <label>Comment<span>*</span></label>
+                                                    <textarea name="message"  class="form-control2" required=""></textarea>     
+                                                </div>   
+                                                <button type="submit"> Send Message </button>  
+                                            </div> 
+                                        </div>
+                                        <p class="form-messege"></p>
+                                    </form>    
+                                </div>    
+                            </div>      
+                        </div>
+                        <div class="col-lg-4 col-md-5">
+                            <div class="contact_info_wrapper">
+                                <div class="contact_title">
+                                    <h4>Location & Details</h4>    
+                                </div>
+                                <div class="contact_info mb-15">
+                                    <div class="contact_info_icone">
+                                        <a href="#"><i class="icofont icofont-location-pin"></i></a>    
+                                    </div>
+                                    <div class="contact_info_text">
+                                        <p><span>Address:</span>  1234 - Bandit Tringi lAliquam <br> Vitae. New York</p>    
+                                    </div>    
+                                </div>
+                                 <div class="contact_info mb-15">
+                                    <div class="contact_info_icone">
+                                        <a href="#"><i class="icofont icofont-email"></i></a>    
+                                    </div>
+                                    <div class="contact_info_text">
+                                        <p><span>Email: </span>   Support@plazathemes.com </p>    
+                                    </div>    
+                                </div>
+                                 <div class="contact_info mb-15">
+                                    <div class="contact_info_icone">
+                                        <a href="#"><i class="icofont icofont-phone"></i></a>    
+                                    </div>
+                                    <div class="contact_info_text">
+                                        <p><span>Phone:</span>  (800) 0123 456 789 </p> 
+                                    </div>    
+                                </div>    
                             </div>    
-                        </div>    
+                        </div>      
                     </div>    
-                </div>  
+                </div>   
             </div>
-            
-            <!--login section end-->
+            <!--contact area css end-->
+           <div class="organic_food_wrapper">
+			   <!--Brand logo start-->  
+				<div class="brand_logo">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12">
+								<div class="brand_list_carousel owl-carousel">
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/1.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/2.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/3.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/4.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/5.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/1.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/2.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/3.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/4.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/5.png" alt="brand logo">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				<!--Brand logo end-->   
+            </div>    
            
-            <!--organicfood wrapper start--> 
+             <!--organicfood wrapper start--> 
             <div class="footer_food_wrapper">         
                 <!-- footer start -->
-                <footer class="footer pt-90 my-account">
+                <footer class="footer pt-90 contact">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-3 col-md-12 col-xs-12">
@@ -465,10 +574,21 @@
                     
                 </footer>
                 
-                <!-- footer end -->  
+                <!-- footer end -->
+                
+                
+                
             </div>
-
-		
+           
+           
+           
+           
+           
+           
+           <!--organicfood wrapper end--> 
+            
+    	
+    
 		<!-- all js here -->
         <script src="${pageContext.request.contextPath}/assets/js/vendor/jquery-1.12.0.min.js"></script>
         <script src="${pageContext.request.contextPath}/assets/js/popper.js"></script>
@@ -479,6 +599,10 @@
         <script src="${pageContext.request.contextPath}/assets/js/waypoints.min.js"></script>
         <script src="${pageContext.request.contextPath}/assets/js/ajax-mail.js"></script>
         <script src="${pageContext.request.contextPath}/assets/js/owl.carousel.min.js"></script>
+        <!--Map js -->
+		<script src="http://ditu.google.cn/maps/api/js?key=AIzaSyAlZPf84AAVt8_FFN7rwQY5nPgB02SlTKs"></script>
+    	<script src="${pageContext.request.contextPath}/assets/js/map.js"></script>
+       
         <script src="${pageContext.request.contextPath}/assets/js/plugins.js"></script>
         <script src="${pageContext.request.contextPath}/assets/js/main.js"></script>
     </body>

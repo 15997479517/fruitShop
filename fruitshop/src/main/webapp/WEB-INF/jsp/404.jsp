@@ -1,31 +1,33 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>My account - eCommerce Bootstrap4 Template</title>
-		<!-- <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>My account - eCommerce Bootstrap4 Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/assets/img/favicon.png">
 		
 		<!-- all css here -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="assets/css/chosen.min.css">
-        <link rel="stylesheet" href="assets/css/ionicons.min.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/material-design-iconic-font.min.css">
-        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-        <link rel="stylesheet" href="assets/css/bundle.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
-</head>
-<body>
-	   <!-- Add your site or application content here -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/animate.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/chosen.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/ionicons.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/meanmenu.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/bundle.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/style.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/responsive.css">
+        <script src="${pageContext.request.contextPath}/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+            <!-- Add your site or application content here -->
             
               <!--organicfood wrapper start--> 
             <div class="organic_food_wrapper blog_details">
@@ -38,7 +40,7 @@
                                    
                                     <div class="logo col-xs-12">
                                         <a href="index.html">
-                                            <img src="assets/img/logo/logo.png" alt="">
+                                            <img src="${pageContext.request.contextPath}/assets/img/logo/logo.png" alt="">
                                         </a>
                                     </div>
                                     
@@ -182,7 +184,7 @@
                                                     <div class="mini_cart_item">
                                                         <div class="mini_cart_img">
                                                             <a href="#">
-                                                                <img src="assets/img/cart/1.jpg" alt="">
+                                                                <img src="${pageContext.request.contextPath}/assets/img/cart/1.jpg" alt="">
                                                                 <span class="cart_count">1</span>
                                                             </a>
                                                         </div>
@@ -197,7 +199,7 @@
                                                     <div class="mini_cart_item">
                                                         <div class="mini_cart_img">
                                                             <a href="#">
-                                                                <img src="assets/img/cart/2.jpg" alt="">
+                                                                <img src="${pageContext.request.contextPath}/assets/img/cart/2.jpg" alt="">
                                                                 <span class="cart_count">1</span>
                                                             </a>
                                                         </div>
@@ -245,9 +247,9 @@
 												<div class="language-selector-wrapper">
 													<div class="language-selector">
 														<ul>
-															<li><a href="#"><img src="assets/img/1.jpg" alt="English"><span class="expand-more">English</span></a></li>
+															<li><a href="#"><img src="${pageContext.request.contextPath}/assets/img/1.jpg" alt="English"><span class="expand-more">English</span></a></li>
 															
-															<li><a href="#"><img src="assets/img/banner/frances2.jpg" alt="Language"><span class="expand-more">Français</span> </a></li>	
+															<li><a href="#"><img src="${pageContext.request.contextPath}/assets/img/banner/frances2.jpg" alt="Language"><span class="expand-more">Français</span> </a></li>	
 															
 														</ul>
 
@@ -333,7 +335,7 @@
                                 <div class="single_footer widget">
                                     <div class="single_footer_widget_inner">
                                         <div class="footer_logo">
-                                            <a href="#"><img src="assets/img/logo/logo_footer.png" alt=""></a>
+                                            <a href="#"><img src="${pageContext.request.contextPath}/assets/img/logo/logo_footer.png" alt=""></a>
                                         </div>
                                         <div class="footer_content">
                                             <p>Address: 123 Main Street, Anytown, CA 12345 - USA.</p>
@@ -439,7 +441,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-xs-12">
                                     <div class="footer_mastercard text-right">
-                                        <a href="#"><img src="assets/img/brand/payment.png" alt=""></a>
+                                        <a href="#"><img src="${pageContext.request.contextPath}/assets/img/brand/payment.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -453,16 +455,16 @@
 
 		
 		<!-- all js here -->
-        <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
-        <script src="assets/js/popper.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/isotope.pkgd.min.js"></script>
-        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-        <script src="assets/js/jquery.counterup.min.js"></script>
-        <script src="assets/js/waypoints.min.js"></script>
-        <script src="assets/js/ajax-mail.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
-</body>
+        <script src="${pageContext.request.contextPath}/assets/js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="${pageContext.request.contextPath}/assets/js/popper.js"></script>
+        <script src="${pageContext.request.contextPath}/assets/js/bootstrap.min.js"></script>
+        <script src="${pageContext.request.contextPath}/assets/js/isotope.pkgd.min.js"></script>
+        <script src="${pageContext.request.contextPath}/assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="${pageContext.request.contextPath}/assets/js/jquery.counterup.min.js"></script>
+        <script src="${pageContext.request.contextPath}/assets/js/waypoints.min.js"></script>
+        <script src="${pageContext.request.contextPath}/assets/js/ajax-mail.js"></script>
+        <script src="${pageContext.request.contextPath}/assets/js/owl.carousel.min.js"></script>
+        <script src="${pageContext.request.contextPath}/assets/js/plugins.js"></script>
+        <script src="${pageContext.request.contextPath}/assets/js/main.js"></script>
+    </body>
 </html>

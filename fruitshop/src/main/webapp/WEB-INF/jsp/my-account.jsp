@@ -5,11 +5,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Login - eCommerce Bootstrap4 Template</title>
-        <!-- <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <title>My account - eCommerce Bootstrap4 Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/assets/img/favicon.png">
 		
 		<!-- all css here -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css">
@@ -26,14 +26,13 @@
         <script src="${pageContext.request.contextPath}/assets/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-
-
+        
             <!-- Add your site or application content here -->
             
               <!--organicfood wrapper start--> 
             <div class="organic_food_wrapper blog_details">
                 <!--Header start-->
-                <header class="header">
+                <header class="header sticky-header">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -289,7 +288,7 @@
                             <nav>
                         <ul>
                             <li><a href="#">Home</a> ></li>
-                            <li>login</li>
+                            <li>My account</li>
                         </ul>
                     </nav>
                         </div>
@@ -298,46 +297,152 @@
             </div>
              <!--breadcrumb area end-->
             
-             
-           
-            <!--login section start-->
-            <div class="page_login_section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
-                            <div class="login_page_form">
-                                <form action="#">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="input_text">
-                                            	<label for="name">Username or email <span>*</span></label>
-                                            	<input id="name" type="text">    
-                                            </div>
-                                        </div>
-                                         <div class="col-12">
-                                            <div class="input_text">
-												<label for="password">Passwords <span>*</span></label>
-												<input id="password" type="password"> 
-											</div>   
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="login_submit">
-                                            	<input class="inline" value="Login" name="Login" type="submit">
-												<label class="inline" for="rememberme">
-													<input id="rememberme" type="checkbox">
-													Remember me	
-												</label>   
-                                            </div> 
-                                        </div>      
-                                    </div>
-                                </form>    
-                            </div>    
-                        </div>    
-                    </div>    
-                </div>  
-            </div>
-            
-            <!--login section end-->
+			<!-- Start Maincontent  -->
+            <section class="main-content-area my-account ptb-100">
+				<div class="container">
+	                <div class="account-dashboard">
+	                    <div class="row">
+	                        <div class="col-sm-12 col-md-3 col-lg-3">
+	                            <!-- Nav tabs -->
+	                            <ul role="tablist" class="nav flex-column dashboard-list">
+	                                <li><a href="#dashboard" data-toggle="tab" class="nav-link active">Dashboard</a></li>
+	                                <li> <a href="#orders" data-toggle="tab" class="nav-link">Orders</a></li>
+	                                <li><a href="#downloads" data-toggle="tab" class="nav-link">Downloads</a></li>
+	                                <li><a href="#address" data-toggle="tab" class="nav-link">Addresses</a></li>
+	                                <li><a href="#account-details" data-toggle="tab" class="nav-link">Account details</a></li>
+	                                <li><a href="login.html" class="nav-link">logout</a></li>
+	                            </ul>
+	                        </div>
+	                        <div class="col-sm-12 col-md-9 col-lg-9">
+	                            <!-- Tab panes -->
+	                            <div class="tab-content dashboard-content">
+	                                <div class="tab-pane fade show active" id="dashboard">
+	                                    <h3>Dashboard </h3>
+	                                    <p>From your account dashboard. you can easily check &amp; view your <a href="#">recent orders</a>, manage your <a href="#">shipping and billing addresses</a> and <a href="#">Edit your password and account details.</a></p>
+	                                </div>
+	                                <div class="tab-pane fade" id="orders">
+	                                    <h3>Orders</h3>
+	                                    <div class="organic-table-area table-responsive">
+	                                        <table class="table">
+	                                            <thead>
+	                                                <tr>
+	                                                    <th>Order</th>
+	                                                    <th>Date</th>
+	                                                    <th>Status</th>
+	                                                    <th>Total</th>
+	                                                    <th>Actions</th>	 	 	 	
+	                                                </tr>
+	                                            </thead>
+	                                            <tbody>
+	                                                <tr>
+	                                                    <td>1</td>
+	                                                    <td>May 10, 2018</td>
+	                                                    <td><span class="success">Completed</span></td>
+	                                                    <td>$25.00 for 1 item </td>
+	                                                    <td><a href="cart.html" class="view">view</a></td>
+	                                                </tr>
+	                                                <tr>
+	                                                    <td>2</td>
+	                                                    <td>May 10, 2018</td>
+	                                                    <td>Processing</td>
+	                                                    <td>$17.00 for 1 item </td>
+	                                                    <td><a href="cart.html" class="view">view</a></td>
+	                                                </tr>
+	                                            </tbody>
+	                                        </table>
+	                                    </div>
+	                                </div>
+	                                <div class="tab-pane fade" id="downloads">
+	                                    <h3>Downloads</h3>
+	                                    <div class="organic-table-area table-responsive">
+	                                        <table class="table">
+	                                            <thead>
+	                                                <tr>
+	                                                    <th>Product</th>
+	                                                    <th>Downloads</th>
+	                                                    <th>Expires</th>
+	                                                    <th>Download</th>	 	 	 	
+	                                                </tr>
+	                                            </thead>
+	                                            <tbody>
+	                                                <tr>
+	                                                    <td>Shopnovilla - Free Real Estate PSD Template</td>
+	                                                    <td>May 10, 2018</td>
+	                                                    <td><span class="danger">Expired</span></td>
+	                                                    <td><a href="#" class="view">Click Here To Download Your File</a></td>
+	                                                </tr>
+	                                                <tr>
+	                                                    <td>Organic - ecommerce html template</td>
+	                                                    <td>Sep 11, 2018</td>
+	                                                    <td>Never</td>
+	                                                    <td><a href="#" class="view">Click Here To Download Your File</a></td>
+	                                                </tr>
+	                                            </tbody>
+	                                        </table>
+	                                    </div>
+	                                </div>
+	                                <div class="tab-pane" id="address">
+	                                   <p>The following addresses will be used on the checkout page by default.</p>
+	                                    <h4 class="billing-address">Billing address</h4>
+	                                    <a href="#" class="view">Edit</a>
+	                                    <p><strong>Bobby Jackson</strong></p>
+	                                    <address>
+	                                    	House #15<br>
+	                                    	Road #1<br>
+	                                    	Block #C <br>
+	                                    	Banasree <br>
+	                                    	Dhaka <br>
+	                                    	1212
+	                                    </address>
+	                                    <p>Bangladesh</p>   
+	                                </div>
+	                                <div class="tab-pane fade" id="account-details">
+	                                    <h3>Account details </h3>
+	                                    <div class="login">
+	                                        <div class="login-form-container">
+	                                            <div class="account-login-form">
+	                                                <form action="#">
+	                                                    <p>Already have an account? <a href="#">Log in instead!</a></p>
+	                                                    <div class="input-radio">
+	                                                        <span class="custom-radio"><input type="radio" value="1" name="id_gender"> Mr.</span>
+	                                                        <span class="custom-radio"><input type="radio" value="1" name="id_gender"> Mrs.</span>
+	                                                    </div> <br>
+	                                                    <label>First Name</label>
+	                                                    <input type="text" name="first-name">
+	                                                    <label>Last Name</label>
+	                                                    <input type="text" name="last-name">
+	                                                    <label>Email</label>
+	                                                    <input type="text" name="email-name">
+	                                                    <label>Password</label>
+	                                                    <input type="password" name="user-password">
+	                                                    <label>Birthdate</label>
+	                                                    <input type="text" placeholder="MM/DD/YYYY" value="" name="birthday">
+	                                                    <span class="example">
+	                                                      (E.g.: 05/31/1970)
+	                                                    </span>
+	                                                    <span class="custom-checkbox">
+	                                                        <input type="checkbox" value="1" name="optin">
+	                                                        <label>Receive offers from our partners</label>
+	                                                    </span>
+	                                                    <span class="custom-checkbox">
+	                                                        <input type="checkbox" value="1" name="newsletter">
+	                                                        <label>Sign up for our newsletter<br><em>You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</em></label>
+	                                                    </span>
+	                                                    <div class="save-button primary-btn default-button">
+	                                                        <a href="#">Save</a>
+	                                                    </div>
+	                                                </form>
+	                                            </div>
+	                                        </div>
+			                            </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>       	
+            </section>			
+			<!-- End Maincontent  -->
            
             <!--organicfood wrapper start--> 
             <div class="footer_food_wrapper">         

@@ -5,17 +5,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Login - eCommerce Bootstrap4 Template</title>
-        <!-- <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <title>About - eCommerce Bootstrap4 Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/assets/img/favicon.png">
 		
 		<!-- all css here -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/animate.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/icofont.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/chosen.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/magnific-popup.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/ionicons.min.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/material-design-iconic-font.min.css">
@@ -30,10 +32,10 @@
 
             <!-- Add your site or application content here -->
             
-              <!--organicfood wrapper start--> 
-            <div class="organic_food_wrapper blog_details">
+            <!--organicfood wrapper start--> 
+            <div class="organic_food_wrapper">
                 <!--Header start-->
-                <header class="header">
+                <header class="header sticky-header">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -278,71 +280,304 @@
                     </div>
                 </header>
                 <!--Header end-->
-            </div>
+             </div>
              <!--organicfood wrapper end-->
              
-            <!--breadcrumb area start-->
-            <div class="breadcrumb_container">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12">     
-                            <nav>
-                        <ul>
-                            <li><a href="#">Home</a> ></li>
-                            <li>login</li>
-                        </ul>
-                    </nav>
-                        </div>
-                    </div> 
-                </div>        
-            </div>
-             <!--breadcrumb area end-->
+			<div class="breadcrumb_container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">     
+							<nav>
+						<ul>
+							<li>
+								<a href="index.html">Home ></a>
+							</li>
+							<li>About Us</li>
+						</ul>
+					</nav>
+						</div>
+					</div> 
+				</div>        
+			</div>
+			<!--breadcrumb area end--> 
             
-             
-           
-            <!--login section start-->
-            <div class="page_login_section">
+            
+            <!--about section area start-->
+            <div class="about_section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
-                            <div class="login_page_form">
-                                <form action="#">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="input_text">
-                                            	<label for="name">Username or email <span>*</span></label>
-                                            	<input id="name" type="text">    
-                                            </div>
-                                        </div>
-                                         <div class="col-12">
-                                            <div class="input_text">
-												<label for="password">Passwords <span>*</span></label>
-												<input id="password" type="password"> 
-											</div>   
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="login_submit">
-                                            	<input class="inline" value="Login" name="Login" type="submit">
-												<label class="inline" for="rememberme">
-													<input id="rememberme" type="checkbox">
-													Remember me	
-												</label>   
-                                            </div> 
-                                        </div>      
-                                    </div>
-                                </form>    
+                        <div class="col-lg-10 offset-lg-1 col-md-12 text-center">
+                            <div class="about_section_one">
+                                <h2>Welcome To Organicfood Store</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore gna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>    
+                            </div>
+                            <div class="about__store__btn">
+                                <a href="#">contact us</a>    
                             </div>    
                         </div>    
                     </div>    
-                </div>  
+                </div>    
             </div>
+            <!--about section area end-->
+              
+                        
+            <!-- about area start-->
+            <div class="about_chooseUs_area">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                            <div class="video__wrape__area" style="background-image:url(${pageContext.request.contextPath}/assets/img/banner/about1.jpg)">
+                                <div class="video__inner">
+                                    <a class="video__trigger" href="https://www.youtube.com/watch?v=cDDWvj_q-o8"><i class="zmdi zmdi-play"></i></a>    
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                            <div class="about_choose_content">
+                                <h3>Why Choose Us?</h3>
+                                <div class="choose_content_inner">
+                                    <div class="single_choose_us">
+                                        <div class="choose_us mb-50">
+                                            <div class="choose_icone">
+                                               <i class="zmdi zmdi-favorite-outline"></i>
+                                            </div>
+                                            <div class="choose_details">
+                                                <h4>Free Gift Box</h4>
+                                                <p>Lorem ipsum dolor sit amet consect adipisic elit sed do. </p>    
+                                            </div>
+                                        </div>
+                                         <div class="choose_us">
+                                            <div class="choose_icone">
+                                               <i class="zmdi zmdi-truck"></i>
+                                            </div>
+                                            <div class="choose_details">
+                                                <h4>Free Delivery</h4>
+                                                <p>Lorem ipsum dolor sit amet consect adipisic elit sed do. </p>    
+                                            </div>
+                                        </div>    
+                                    </div>
+                                    <div class="single_choose_us">
+                                        <div class="choose_us  mb-50">
+                                            <div class="choose_icone">
+                                              <i class="zmdi zmdi-refresh-alt"></i>
+                                            </div>
+                                            <div class="choose_details">
+                                                <h4>Money Back</h4>
+                                                <p>Lorem ipsum dolor sit amet consect adipisic elit sed do. </p>    
+                                            </div>
+                                        </div>
+                                        <div class="choose_us">
+                                            <div class="choose_icone"><i class="zmdi zmdi-time"></i>  </div>
+                                            <div class="choose_details">
+                                                <h4>Support 24/7</h4>
+                                                <p>Lorem ipsum dolor sit amet consect adipisic elit sed do. </p>    
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>       
+                            </div>    
+                        </div>   
+                    </div>
+                         
+                </div>    
+                
+             </div>
+            <!-- about area end -->
+                
+                
+            <!--about team area start--> 
+            <div class="about_team_area ptb-90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3">
+                            <div class="about_section_title">
+                                <h2>Our Staff</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labo.</p>  
+                            </div>    
+                        </div>    
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="single_team">
+                                <div class="team__imge">
+                                    <a href="#"><img src="${pageContext.request.contextPath}/assets/img/banner/team1.jpg" alt=""></a>    
+                                </div>
+                                <div class="team_hover_inpo">
+                                    <div class="team_hover_action">
+                                        <h2><a href="#">Grace Porter</a></h2> 
+                                        <ul>
+                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                            <li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
+                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                        </ul>   
+                                    </div>    
+                                </div>    
+                            </div>    
+                        </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="single_team">
+                                <div class="team__imge">
+                                    <a href="#"><img src="${pageContext.request.contextPath}/assets/img/banner/team2.jpg" alt=""></a>    
+                                </div>
+                                <div class="team_hover_inpo">
+                                    <div class="team_hover_action">
+                                        <h2><a href="#">Larry Martin</a></h2> 
+                                        <ul>
+                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                            <li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
+                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                        </ul>   
+                                    </div>    
+                                </div>    
+                            </div>    
+                        </div> 
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="single_team team__three">
+                                <div class="team__imge">
+                                    <a href="#"><img src="${pageContext.request.contextPath}/assets/img/banner/team4.jpg" alt=""></a>    
+                                </div>
+                                <div class="team_hover_inpo">
+                                    <div class="team_hover_action">
+                                        <h2><a href="#">Tiffany Fowler</a></h2> 
+                                        <ul>
+                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                            <li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
+                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                        </ul>   
+                                    </div>    
+                                </div>    
+                            </div>    
+                        </div>     
+                    </div>   
+                </div>    
+            </div>
+            <!--about team area end--> 
+                
             
-            <!--login section end-->
-           
-            <!--organicfood wrapper start--> 
-            <div class="footer_food_wrapper">         
-                <!-- footer start -->
-                <footer class="footer pt-90 my-account">
+            <!--testimonial area start--> 
+            <div class="about_testimonial_area mb-65" style="background-image:url(${pageContext.request.contextPath}/assets/img/banner/testimonial4.jpg)">
+               <div class="about_testimonial_inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 offset-xl-2 col-lg-12 col-md-12">
+                                <div class="testimonial___wrapper owl-carousel">
+                                    <div class="single___testimonial text-center">
+                                        <div class="testimonial__image ">
+                                            <img src="${pageContext.request.contextPath}/assets/img/banner/testi1.png" alt="">    
+                                        </div>
+                                        <div class="testimonial__details">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod teincidi dunt ut labore et dolore gna aliqua. Ut enim ad minim veniam,voluptate accusantium autem maiores blanditiis rerum esse quaerat.</p>    
+                                        </div>
+                                        <div class="testimonial__info">
+                                            <a href="#">Evelyn Lucas</a>
+                                            <span>-</span>    
+                                            <span>Customer</span>    
+                                        </div>    
+                                    </div>
+                                    <div class="single___testimonial text-center">
+                                        <div class="testimonial__image">
+                                            <img src="${pageContext.request.contextPath}/assets/img/banner/testi2.png" alt="">    
+                                        </div>
+                                        <div class="testimonial__details">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod teincidi dunt ut labore et dolore gna aliqua. Ut enim ad minim veniam,voluptate accusantium autem maiores blanditiis rerum esse quaerat.</p>        
+                                        </div>
+                                        <div class="testimonial__info">
+                                            <a href="#">Terry Cook</a>
+                                            <span>-</span>    
+                                            <span>Customer</span>    
+                                        </div>    
+                                    </div>
+                                    <div class="single___testimonial text-center">
+                                        <div class="testimonial__image">
+                                            <img src="${pageContext.request.contextPath}/assets/img/banner/testi3.png" alt="">    
+                                        </div>
+                                        <div class="testimonial__details">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod teincidi dunt ut labore et dolore gna aliqua. Ut enim ad minim veniam,voluptate accusantium autem maiores blanditiis rerum esse quaerat.</p>      
+                                        </div>
+                                        <div class="testimonial__info">
+                                            <a href="#">Andrea Hopkins</a>
+                                            <span>-</span>    
+                                            <span>Customer</span>    
+                                        </div>    
+                                    </div>
+                                      
+                                </div>    
+                            </div>    
+                        </div>    
+                    </div> 
+                </div> 
+            </div> 
+            <!--testimonial area end-->  
+         
+            <div class="organic_food_wrapper">
+            	<!--Brand logo start-->  
+				<div class="brand_logo brand_about">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12">
+								<div class="brand_list_carousel owl-carousel">
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/1.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/2.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/3.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/4.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/5.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/1.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/2.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/3.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/4.png" alt="brand logo">
+										</a>
+									</div>
+									<div class="single_brand_logo">
+										<a href="#">
+											<img src="${pageContext.request.contextPath}/assets/img/brand/5.png" alt="brand logo">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				<!--Brand logo end-->   
+
+				<!-- footer start -->
+                <footer class="footer footer_about pt-90">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-3 col-md-12 col-xs-12">
@@ -465,9 +700,18 @@
                     
                 </footer>
                 
-                <!-- footer end -->  
-            </div>
+                <!-- footer end -->
 
+				<!-- footer end -->
+			</div>	
+                
+ 
+           <!--organicfood wrapper end--> 
+            
+    
+            
+  
+		
 		
 		<!-- all js here -->
         <script src="${pageContext.request.contextPath}/assets/js/vendor/jquery-1.12.0.min.js"></script>

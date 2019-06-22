@@ -5,11 +5,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Login - eCommerce Bootstrap4 Template</title>
-        <!-- <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <title>Wishlist ||- eCommerce Bootstrap4 Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/assets/img/favicon.png">
 		
 		<!-- all css here -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css">
@@ -28,12 +28,13 @@
     <body>
 
 
+
             <!-- Add your site or application content here -->
             
-              <!--organicfood wrapper start--> 
+             <!--organicfood wrapper start--> 
             <div class="organic_food_wrapper blog_details">
                 <!--Header start-->
-                <header class="header">
+                <header class="header sticky-header">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -288,8 +289,10 @@
                         <div class="col-12">     
                             <nav>
                         <ul>
-                            <li><a href="#">Home</a> ></li>
-                            <li>login</li>
+                            <li>
+                                <a href="index.html">Home ></a>
+                            </li>
+                            <li>Wishlist </li>
                         </ul>
                     </nav>
                         </div>
@@ -297,51 +300,70 @@
                 </div>        
             </div>
              <!--breadcrumb area end-->
-            
-             
-           
-            <!--login section start-->
-            <div class="page_login_section">
+    
+            <div class="cart_main_area">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
-                            <div class="login_page_form">
-                                <form action="#">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="input_text">
-                                            	<label for="name">Username or email <span>*</span></label>
-                                            	<input id="name" type="text">    
-                                            </div>
-                                        </div>
-                                         <div class="col-12">
-                                            <div class="input_text">
-												<label for="password">Passwords <span>*</span></label>
-												<input id="password" type="password"> 
-											</div>   
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="login_submit">
-                                            	<input class="inline" value="Login" name="Login" type="submit">
-												<label class="inline" for="rememberme">
-													<input id="rememberme" type="checkbox">
-													Remember me	
-												</label>   
-                                            </div> 
-                                        </div>      
-                                    </div>
-                                </form>    
-                            </div>    
-                        </div>    
+                        <div class="col-12">
+                            <form action="#">  
+                                <div class="table-content table-responsive table-wishlist">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="product-remove one">Remove</th>
+                                                <th class="img-thumbnail">Image</th>
+                                                <th class="product-name">Product Name</th>
+                                                <th class="product-price four">Unit Price </th>
+                                                <th class="product-stock-stauts">Stock Status </th>
+                                                <th class="product-add-cart wishlist">Add To Cart</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="product-remove"><a href="#">X</a></td>
+                                                <td class="product-thumbnail"><img src="${pageContext.request.contextPath}/assets/img/product/6.jpg" alt=""></td>
+                                                <td class="product-name"><a href="#">Vestibulum suscipit</a></td>
+                                                <td class="product-price"><span class="amount">£165.00</span></td>
+                                                <td class="product-stock-stauts">In Stock</td>
+                                                <td class="product-add-cart wishlist"><a href="#"> Add to Cart</a></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td class="product-remove"><a href="#">X</a></td>
+                                                <td class="product-thumbnail"><img src="${pageContext.request.contextPath}/assets/img/product/7.jpg" alt=""></td>
+                                                <td class="product-name"><a href="#">Vestibulum dictum magna</a></td>
+                                                <td class="product-price"><span class="amount">£165.00</span></td>
+                                                <td class="product-stock-stauts">In Stock</td>
+                                                <td class="product-add-cart wishlist"><a href="#"> Add to Cart</a></td>
+                                            </tr>
+                                        </tbody>
+                                        
+                                    </table>
+                                </div>
+                            </form>         
+                        </div> 
+                        <div class="col-12">
+                             <div class="wishlist-share">
+                                <h4>Share on:</h4>
+                                <div class="social-icon">
+                                    <ul>
+                                        <li><a href=""><i class="zmdi zmdi-rss"></i></a></li>           
+                                        <li><a href=""><i class="zmdi zmdi-vimeo"></i></a></li>           
+                                        <li><a href=""><i class="zmdi zmdi-tumblr"></i></a></li>           
+                                        <li><a href=""><i class="zmdi zmdi-pinterest"></i></a></li>        
+                                        <li><a href=""><i class="zmdi zmdi-linkedin"></i></a></li>        
+                                    </ul>    
+                                </div>    
+                            </div>
+                        </div>   
                     </div>    
-                </div>  
+                </div>   
             </div>
             
-            <!--login section end-->
-           
             <!--organicfood wrapper start--> 
             <div class="footer_food_wrapper">         
-                <!-- footer start -->
+                 <!-- footer start -->
                 <footer class="footer pt-90 my-account">
                     <div class="container-fluid">
                         <div class="row">
@@ -465,9 +487,23 @@
                     
                 </footer>
                 
-                <!-- footer end -->  
+                <!-- footer end -->
+                
+                
+                
             </div>
-
+           
+           
+           
+           
+           
+           
+           <!--organicfood wrapper end--> 
+            
+    
+            
+  
+		
 		
 		<!-- all js here -->
         <script src="${pageContext.request.contextPath}/assets/js/vendor/jquery-1.12.0.min.js"></script>
