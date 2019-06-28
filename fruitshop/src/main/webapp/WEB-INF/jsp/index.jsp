@@ -1,6 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!doctype html>
 <html class="no-js" lang="zxx">
     <head>
         <meta charset="utf-8">
@@ -249,7 +247,7 @@
 														<ul>
 															<li><a href="#"><img src="${pageContext.request.contextPath}/assets/img/1.jpg" alt="English"><span class="expand-more">English</span></a></li>
 															
-															<li><a href="#"><img src="${pageContext.request.contextPath}/assets/img/banner/frances2.jpg" alt="Language"><span class="expand-more">FranÃ§ais</span> </a></li>	
+															<li><a href="#"><img src="${pageContext.request.contextPath}/assets/img/banner/frances2.jpg" alt="Language"><span class="expand-more">Français</span> </a></li>	
 															
 														</ul>
 

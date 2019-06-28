@@ -1,18 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!doctype html>
 <html class="no-js" lang="zxx">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Product Details -  eCommerce Bootstrap4 Template</title>
+        <title>Register- eCommerce Bootstrap4 Template</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/assets/img/favicon.png">
 		
 		<!-- all css here -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/jquery-ui.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/animate.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/owl.carousel.min.css">
@@ -28,13 +27,12 @@
     </head>
     <body>
 
-        
 
             <!-- Add your site or application content here -->
             
             <!--organicfood wrapper start--> 
-            <div class="organic_food_wrapper">
-                <!--Header start-->
+            <div class="organic_food_wrapper blog_details">
+             	<!--Header start-->
                 <header class="header sticky-header">
                     <div class="container-fluid">
                         <div class="row">
@@ -280,620 +278,147 @@
                     </div>
                 </header>
                 <!--Header end-->
-            </div>    
-                <!--breadcrumb area start-->
-                <div class="breadcrumb_container">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12">     
-                                <nav>
-                            <ul>
-                                <li>
-                                    <a href="index.html">Home ></a>
-                                </li>
-                                <li>Product details </li>
-                            </ul>
-                        </nav>
-                            </div>
-                        </div> 
-                    </div>        
-                </div>
-                 <!--breadcrumb area end-->
-                
-                
-                <!-- primary block area -->
-                <div class="table_primary_block pt-100">
-                    <div class="container">   
-                        <div class="row">
-                            <div class="col-lg-5 col-md-5 col-sm-12">
-                                <div class="product-flags">  
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade show active" id="tabone" role="tabpanel" >
-                                            <div class="product_tab_img">
-                                                <a href="#"><img src="${pageContext.request.contextPath}/assets/img/cart/nav12.jpg" alt=""></a>    
-                                            </div>
+            </div>
+             <!--organicfood wrapper end-->
+             
+            <!--breadcrumb area start-->
+            <div class="breadcrumb_container ">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">     
+                            <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home ></a>
+                            </li>
+                            <li>Register</li>
+                        </ul>
+                    </nav>
+                        </div>
+                    </div> 
+                </div>        
+            </div>
+             <!--breadcrumb area end-->
+           
+            <!--login section start-->
+            <div class="page_login_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="register_page_form">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="input_text">
+												<label for="R_N">First Name <span>*</span></label>
+												<input id="R_N" type="text"> 
+                                            </div>   
                                         </div>
-                                        <div class="tab-pane fade" id="tabtwo" role="tabpanel">
-                                            <div class="product_tab_img">
-                                                <a href="#"><img src="${pageContext.request.contextPath}/assets/img/cart/nav11.jpg" alt=""></a>    
-                                            </div>
+                                         <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="input_text">
+												<label for="R_N2">Last Name <span>*</span></label>
+												<input id="R_N2" type="text">    
+											</div>
                                         </div>
-                                        <div class="tab-pane fade" id="tabthree" role="tabpanel">
-                                            <div class="product_tab_img">
-                                                <a href="#"><img src="${pageContext.request.contextPath}/assets/img/cart/nav13.jpg" alt=""></a>    
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="products_tab_button">    
-                                        <ul class="nav product_navactive" role="tablist">
-                                            <li  class="product_button_one">
-                                                <a class="nav-link active"  data-toggle="tab" href="#tabone" role="tab" aria-controls="imgeone" aria-selected="false"><img src="${pageContext.request.contextPath}/assets/img/cart/nav.jpg" alt=""></a>
-                                            </li>
-                                            <li>
-                                                 <a class="nav-link" data-toggle="tab" href="#tabtwo" role="tab" aria-controls="imgetwo" aria-selected="false"><img src="${pageContext.request.contextPath}/assets/img/cart/nav1.jpg" alt=""></a>
-                                            </li>
-                                            <li>
-                                               <a class="nav-link" data-toggle="tab" href="#tabthree" role="tab" aria-controls="imgethree" aria-selected="false"><img src="${pageContext.request.contextPath}/assets/img/cart/nav2.jpg" alt=""></a>
-                                            </li>
-                                        </ul>
-                                    </div>    
-                                </div>  
-                            </div>
-                            <div class="col-lg-7 col-md-7 col-sm-12">
-                                <div class="product__details_content">
-                                    <div class="demo_product">
-                                        <h2>Cheese Butter Burger</h2> 
-                                        <p>Reference: demo_10</p>
-                                    </div>
-                                    <div class="product_comments_block">
-                                        <div class="comments_note clearfix">
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        <div class="col-12">
+                                            <div class="input_text">
+												<label for="R_N3">Company Name</label>
+												<input id="R_N3" type="text">   
+											</div> 
                                         </div> 
-                                        <div class="comments_advices">
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i>
-                                                 Read reviews (<span>1</span>)</a></li>
-                                                <li><a href="#"><i class="fa fa-pencil"></i>Read reviews </a></li>
-                                            </ul>    
-                                        </div>   
-                                    </div>
-                                    <div class="current_price">
-                                        <span>$78.99</span>    
-                                    </div>
-                                    <div class="product_information">
-                                        <div id="product_description_short">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique fuga eum minus necessitatibus commodi veniam in a quibusdam voluptatem! Nihil, iste non eius amet culpa!</p>    
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="input_text">
+												<label for="R_N4">Email Address <span>*</span></label>
+												<input id="R_N4" type="text"> 
+											</div>   
                                         </div>
-                                        <div class="product_variants">
-                                            <div class="product_variant_list">
-                                            	<div class="product_variants_item variants_product">
-													<span class="control_label">Size</span>
-													<select name="group[1]" id="group_1">
-														<option value="1">S</option>
-														<option value="2" selected="selected">M</option>
-														<option value="3">L</option>
-													</select>    
-												</div>    
-												<div class="product_variants_item">
-													<span class="control_label">Color</span>
-													<ul>
-														<li>
-
-															<input id="balck" checked="checked" class="input_color" name="color1"  type="radio"> 
-															<label for="balck" class="colo_btn"></label> 
-														</li>
-														 <li>
-
-															<input id="red" class="input_color" name="color1"  type="radio">  
-															<label for="red" class="colo_btn"></label>
-														</li>
-													</ul>
-												</div>
+                                         <div class="col-lg-6 col-sm-6 col-md-6">
+											<div class="input_text">
+												<label for="R_N5">Phone<span>*</span></label>
+												<input id="R_N5" type="text">  
+											</div>  
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input_text">
+                                            	<label for="R_N6">Country<span>*</span></label>
+												<select  id="R_N6">
+													<option value="1">Select a country</option>
+													<option value="2">bangladesh</option>
+													<option value="3">Algeria</option>
+													<option value="4">Afghanistan</option>
+													<option value="5">Ghana</option>
+													<option value="6">Albania</option>
+													<option value="7">Colombia</option>
+													<option value="8">Bahrain</option>
+													<option value="9">Dominican Republic</option>  
+												</select> 
+                                            </div>  
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input_text">
+                                            	<label for="R_N7">Address<span>*</span></label>
+                                            	<input id="R_N7" placeholder="Street address" type="text">    
+                                            </div>
+                                        </div> 
+                                        <div class="col-12">
+                                            <div class="input_text">
+                                            	<input placeholder="Apartment, suite, unit etc. (optional)" type="text">   
                                             </div> 
-                                            <div class="quickview_plus_minus">
-                                                <span class="control_label">Quantity</span>
-                                                <div class="quickview_plus_minus_inner">
-                                                    <div class="cart-plus-minus">
-                                                        <input type="text" value="02" name="qtybutton" class="cart-plus-minus-box">
-                                                    </div>
-                                                    <div class="add_button">
-                                                        <button type="submit"> Add to cart</button> 
-                                                    </div>
-                                                </div>    
-                                            </div> 
-                                            <div class="product-availability">
-                                                <span id="availability">
-                                                    <i class="zmdi zmdi-check"></i>
-                                                     In stock    
-                                                </span>    
-                                            </div> 
-                                            <div class="social-sharing">
-                                               <span>Share</span>
-                                                <ul>
-                                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                                                </ul>    
-                                            </div> 
-                                            <div class="block-reassurance">
-                                                <ul>
-                                                    <li>
-                                                        <img src="${pageContext.request.contextPath}/assets/img/cart/cart1.png" alt="">
-                                                        <span>Security policy (edit with Customer reassurance module)</span>
-                                                    </li>
-                                                    <li>
-                                                        <img src="${pageContext.request.contextPath}/assets/img/cart/cart2.png" alt="">
-                                                        <span>Delivery policy (edit with Customer reassurance module)</span>
-                                                    </li>
-                                                    <li>
-                                                        <img src="${pageContext.request.contextPath}/assets/img/cart/cart3.png" alt="">
-                                                        <span>Return policy (edit with Customer reassurance module)</span>
-                                                    </li>
-                                                </ul>    
+                                        </div> 
+                                        <div class="col-12">
+                                            <div class="input_text">
+                                            	<label for="R_N8">Town / City<span>*</span></label>
+                                            	<input id="R_N8" type="text">    
                                             </div>
                                         </div>
-                                    </div>   
-                                </div>
-                            </div>   
-                        </div>
-                    </div>       
-                </div>
-                <!-- primary block end -->
-                
-                <!-- product page tab -->
-                
-                <div class="product_page_tab ptb-100">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="product_tab_button">
-                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                        <li>
-                                            <a class=" tav_past active" id="home-tab" data-toggle="tab" href="#Description" role="tab" aria-controls="Description" aria-selected="true">Description</a>
-                                        </li>
-                                        <li>
-                                            <a class=" tav_past"  id="profile-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="false">Information</a>
-                                        </li>
-                                       <li>
-                                            <a class=" tav_past"  id="contact-tab" data-toggle="tab" href="#Reviews" role="tab" aria-controls="Reviews" aria-selected="false">Reviews</a>
-                                       </li>
-                                    </ul>
-                                </div>    
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="Description" role="tabpanel" >
-                                        <div class="product-description">
-                                            <p>Fashion has been creating well-designed collections since 2010. The brand offers feminine designs delivering stylish separates and statement dresses which have since evolved into a full ready-to-wear collection in which every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and unmistakable signature style. All the beautiful pieces are made in Italy and manufactured with the greatest attention. Now Fashion extends to a range of accessories including shoes, hats, belts and more!</p>  
-                                       </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="details" role="tabpanel">
-                                        <div class="product-details">
-                                            <div class="product-manufacturer">
-                                                <a href=""><img src="${pageContext.request.contextPath}/assets/img/cart/11.jpg" alt=""></a>   
-                                            </div> 
-                                            <div class="product-reference">
-                                                <label class="label">Reference </label> 
-                                                <span>demo_10</span>   
-                                            </div> 
-                                            <div class="product-quantities">
-                                                <label class="label">In stock</label> 
-                                                <span>321 Items</span>   
-                                            </div> 
-                                            <div class="product-out-of-stock">
-                                                <section class="product-features">
-                                                    <h3>Data sheet</h3>
-                                                    <dl class="data-sheet">
-                                                        <dt class="name">Compositions</dt>    
-                                                        <dd class="value">Viscose</dd>
-                                                        <dt class="name">Styles</dt>
-                                                        <dd class="value">Dressy</dd>
-                                                        <dt class="name">Properties</dt> 
-                                                        <dd class="value">Short Dress</dd>     
-                                                    </dl>
-                                                </section>    
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="input_text">
+                                            	<label for="R_N9">State / County <span>*</span></label>
+                                            	<input id="R_N9" type="text">   
                                             </div> 
                                         </div>
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="input_text">
+                                            	<label for="R_N10">Postcode / Zip<span>*</span></label>
+                                            	<input id="R_N10" type="text">    
+                                            </div>
+                                        </div> 
+                                        <div class="col-12">
+                                            <div class="input_text">
+												<label for="R_N11">Account password<span>*</span></label>
+												<input id="R_N11" type="text">    
+											</div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input_text">
+												<label for="R_N12">Confirm password<span>*</span></label>
+												<input id="R_N12" type="text"> 
+											</div>   
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input_text">
+												<input id="rememberme" type="checkbox"> 
+												<label for="rememberme">I agree Terms & Condition</label>   
+											</div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="login_submit">
+                                            	<input value="register" type="submit">
+                                            </div>
+                                        </div>    
                                     </div>
-                                    <div class="tab-pane fade" id="Reviews" role="tabpanel">
-                                        <div class="product_comments_block_tab">
-                                            <div class="comment_clearfix">
-                                                <div class="comment_author">
-                                                    <span>Grade </span> 
-                                                    <div class="star_content clearfix">
-                                                        <ul>
-                                                            <li><i class="fa fa-star"></i></li>
-                                                            <li><i class="fa fa-star"></i></li>
-                                                            <li><i class="fa fa-star"></i></li>
-                                                            <li><i class="fa fa-star"></i></li>
-                                                            <li><i class="fa fa-star"></i></li>
-                                                        </ul>    
-                                                    </div> 
-                                                    
-                                                </div> 
-                                                 <div class="comment_author_infos">
-                                                     <strong>posthemes </strong>
-                                                     <br>
-                                                    <em>05/08/2018</em>    
-                                                </div>
-                                                <div class="comment_details">
-                                                    <h4>Demo</h4>
-                                                    <p>themes</p>    
-                                                </div>
-                                                <div class="review">
-                                                    <p><a href="#">Write your review !</a></p>   
-                                                </div>    
-                                            </div>    
-                                        </div>  
-                                   </div>
-                                </div>
+                                </form>    
                             </div>    
-                         </div>    
-                    </div>        
-                </div>
-                <!-- product page tab end -->
-                
-                <!--Features product area-->
-                <div class="features_product">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="section_title text-left">
-                                    <h3> Related Product </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="related_product_active owl-carousel">
-
-                                <div class="col-lg-2">
-                                    <div class="single__product">
-                                        <div class="single_product__inner">
-                                            <span class="new_badge">new</span>
-                                            <div class="product_img">
-                                            <a href="#">
-                                                <img src="${pageContext.request.contextPath}/assets/img/product/2.jpg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product__content text-center">
-                                                <div class="produc_desc_info">
-                                                    <div class="product_title">
-                                                        <h4><a href="product-details.html">Cheese Butter Burger</a></h4>
-                                                    </div>
-                                                    <div class="product_price">
-                                                        <p>$75.66</p>
-                                                    </div>
-                                                </div>
-                                                <div class="product__hover">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
-                                                          <li><a class="cart-fore" href="#" data-toggle="modal" data-target="#my_modal"  title="Quick View" ><i class="ion-android-open"></i></a></li>
-                                                        <li><a href="product-details.html"><i class="ion-clipboard"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2">
-                                    <div class="single__product">
-                                        <div class="single_product__inner">
-                                            <span class="new_badge">new</span>
-                                            <span class="discount_price">-5%</span>
-                                            <div class="product_img">
-                                            <a href="#">
-                                                <img src="${pageContext.request.contextPath}/assets/img/product/3.jpg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product__content text-center">
-                                                <div class="produc_desc_info">
-                                                    <div class="product_title">
-                                                        <h4><a href="product-details.html">Sprite Yoga Straps1</a></h4>
-                                                    </div>
-                                                    <div class="product_price">
-                                                        <p>$65.66</p>
-                                                    </div>
-                                                </div>
-                                                <div class="product__hover">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
-                                                         <li><a class="cart-fore" href="#" data-toggle="modal" data-target="#my_modal"  title="Quick View" ><i class="ion-android-open"></i></a></li>
-                                                        <li><a href="product-details.html"><i class="ion-clipboard"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-2">
-                                    <div class="single__product">
-                                        <div class="single_product__inner">
-                                            <span class="new_badge">new</span>
-                                            <div class="product_img">
-                                            <a href="#">
-                                                <img src="${pageContext.request.contextPath}/assets/img/product/4.jpg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product__content text-center">
-                                                <div class="produc_desc_info">
-                                                    <div class="product_title">
-                                                        <h4><a href="product-details.html">Wayfarer Messenger Bag</a></h4>
-                                                    </div>
-                                                    <div class="product_price">
-                                                        <p>$57.66</p>
-                                                    </div>
-                                                </div>
-                                                <div class="product__hover">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
-                                                         <li><a class="cart-fore" href="#" data-toggle="modal" data-target="#my_modal"  title="Quick View" ><i class="ion-android-open"></i></a></li>
-                                                        <li><a href="product-details.html"><i class="ion-clipboard"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-lg-2">
-                                    <div class="single__product">
-                                        <div class="single_product__inner">
-                                            <span class="new_badge">new</span>
-                                            <div class="product_img">
-                                            <a href="#">
-                                                <img src="${pageContext.request.contextPath}/assets/img/product/5.jpg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product__content text-center">
-                                                <div class="produc_desc_info">
-                                                    <div class="product_title">
-                                                        <h4><a href="product-details.html">Impulse Duffle</a></h4>
-                                                    </div>
-                                                    <div class="product_price">
-                                                        <p>$95.66</p>
-                                                    </div>
-                                                </div>
-                                                <div class="product__hover">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
-                                                         <li><a class="cart-fore" href="#" data-toggle="modal" data-target="#my_modal"  title="Quick View" ><i class="ion-android-open"></i></a></li>
-                                                        <li><a href="product-details.html"><i class="ion-clipboard"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-2">
-                                    <div class="single__product">
-                                        <div class="single_product__inner">
-                                            <span class="new_badge">new</span>
-                                            <div class="product_img">
-                                            <a href="#">
-                                                <img src="${pageContext.request.contextPath}/assets/img/product/6.jpg" alt="">
-                                            </a>
-                                            </div>
-                                            <div class="product__content text-center">
-                                                <div class="produc_desc_info">
-                                                    <div class="product_title">
-                                                        <h4><a href="product-details.html">Fusce nec facilisi</a></h4>
-                                                    </div>
-                                                    <div class="product_price">
-                                                        <p>$88.66</p>
-                                                    </div>
-                                                </div>
-                                                <div class="product__hover">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
-                                                         <li><a class="cart-fore" href="#" data-toggle="modal" data-target="#my_modal"  title="Quick View" ><i class="ion-android-open"></i></a></li>
-                                                        <li><a href="product-details.html"><i class="ion-clipboard"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-2">
-                                    <div class="single__product">
-                                        <div class="single_product__inner">
-                                            <span class="new_badge">new</span>
-                                            <span class="discount_price">-5%</span>
-                                            <div class="product_img">
-                                            <a href="#">
-                                                 <img src="${pageContext.request.contextPath}/assets/img/product/7.jpg" alt="">
-                                            </a>
-                                            </div>
-                                            <div class="product__content text-center">
-                                                <div class="produc_desc_info">
-                                                    <div class="product_title">
-                                                        <h4><a href="product-details.html">Chaz Kangeroo Hoodie3</a></h4>
-                                                    </div>
-                                                    <div class="product_price">
-                                                        <p>$99.66</p>
-                                                    </div>
-                                                </div>
-                                                <div class="product__hover">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
-                                                         <li><a class="cart-fore" href="#" data-toggle="modal" data-target="#my_modal"  title="Quick View" ><i class="ion-android-open"></i></a></li>
-                                                        <li><a href="product-details.html"><i class="ion-clipboard"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-lg-2">
-                                    <div class="single__product">
-                                        <div class="single_product__inner">
-                                            <span class="new_badge">new</span>
-                                            <div class="product_img">
-                                            <a href="#">
-                                                 <img src="${pageContext.request.contextPath}/assets/img/product/8.jpg" alt="">
-                                            </a>
-                                            </div>
-                                            <div class="product__content text-center">
-                                                <div class="produc_desc_info">
-                                                    <div class="product_title">
-                                                        <h4><a href="product-details.html">Donec sem tellus</a></h4>
-                                                    </div>
-                                                    <div class="product_price">
-                                                        <p>$80.66</p>
-                                                    </div>
-                                                </div>
-                                                <div class="product__hover">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
-                                                         <li><a class="cart-fore" href="#" data-toggle="modal" data-target="#my_modal"  title="Quick View" ><i class="ion-android-open"></i></a></li>
-                                                        <li><a href="product-details.html"><i class="ion-clipboard"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-lg-2">
-                                    <div class="single__product">
-                                        <div class="single_product__inner">
-                                            <span class="new_badge">new</span>
-                                            <div class="product_img">
-                                            <a href="#">
-                                                 <img src="${pageContext.request.contextPath}/assets/img/product/9.jpg" alt="">
-                                            </a>
-                                            </div>
-                                            <div class="product__content text-center">
-                                                <div class="produc_desc_info">
-                                                    <div class="product_title">
-                                                        <h4><a href="product-details.html">Healthy Melt</a></h4>
-                                                    </div>
-                                                    <div class="product_price">
-                                                        <p>$90.66</p>
-                                                    </div>
-                                                </div>
-                                                <div class="product__hover">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
-                                                         <li><a class="cart-fore" href="#" data-toggle="modal" data-target="#my_modal"  title="Quick View" ><i class="ion-android-open"></i></a></li>
-                                                        <li><a href="product-details.html"><i class="ion-clipboard"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-2">
-                                    <div class="single__product">
-                                        <div class="single_product__inner">
-                                            <span class="new_badge">new</span>
-                                            <span class="discount_price">-5%</span>
-                                            <div class="product_img">
-                                            <a href="#">
-                                                 <img src="${pageContext.request.contextPath}/assets/img/product/10.jpg" alt="">
-                                            </a>
-                                            </div>
-                                            <div class="product__content text-center">
-                                                <div class="produc_desc_info">
-                                                    <div class="product_title">
-                                                        <h4><a href="product-details.html">Mushroom Burger</a></h4>
-                                                    </div>
-                                                    <div class="product_price">
-                                                        <p>$45.66</p>
-                                                    </div>
-                                                </div>
-                                                <div class="product__hover">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
-                                                          <li><a class="cart-fore" href="#" data-toggle="modal" data-target="#my_modal"  title="Quick View" ><i class="ion-android-open"></i></a></li>
-                                                        <li><a href="product-details.html"><i class="ion-clipboard"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Features product end-->
-                
-            <div class="organic_food_wrapper">
-                <!--Brand logo start-->  
-                <div class="brand_logo">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="brand_list_carousel owl-carousel">
-                                    <div class="single_brand_logo">
-                                        <a href="#">
-                                            <img src="${pageContext.request.contextPath}/assets/img/brand/1.png" alt="brand logo">
-                                        </a>
-                                    </div>
-                                    <div class="single_brand_logo">
-                                        <a href="#">
-                                            <img src="${pageContext.request.contextPath}/assets/img/brand/2.png" alt="brand logo">
-                                        </a>
-                                    </div>
-                                    <div class="single_brand_logo">
-                                        <a href="#">
-                                            <img src="${pageContext.request.contextPath}/assets/img/brand/3.png" alt="brand logo">
-                                        </a>
-                                    </div>
-                                    <div class="single_brand_logo">
-                                        <a href="#">
-                                            <img src="${pageContext.request.contextPath}/assets/img/brand/4.png" alt="brand logo">
-                                        </a>
-                                    </div>
-                                    <div class="single_brand_logo">
-                                        <a href="#">
-                                            <img src="${pageContext.request.contextPath}/assets/img/brand/5.png" alt="brand logo">
-                                        </a>
-                                    </div>
-                                    <div class="single_brand_logo">
-                                        <a href="#">
-                                            <img src="${pageContext.request.contextPath}/assets/img/brand/1.png" alt="brand logo">
-                                        </a>
-                                    </div>
-                                    <div class="single_brand_logo">
-                                        <a href="#">
-                                            <img src="${pageContext.request.contextPath}/assets/img/brand/2.png" alt="brand logo">
-                                        </a>
-                                    </div>
-                                    <div class="single_brand_logo">
-                                        <a href="#">
-                                            <img src="${pageContext.request.contextPath}/assets/img/brand/3.png" alt="brand logo">
-                                        </a>
-                                    </div>
-                                    <div class="single_brand_logo">
-                                        <a href="#">
-                                            <img src="${pageContext.request.contextPath}/assets/img/brand/4.png" alt="brand logo">
-                                        </a>
-                                    </div>
-                                    <div class="single_brand_logo">
-                                        <a href="#">
-                                            <img src="${pageContext.request.contextPath}/assets/img/brand/5.png" alt="brand logo">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-                <!--Brand logo end-->   
-                
-                <!-- footer start -->
+                        </div>    
+                    </div>    
+                </div>  
+            </div>
+            
+            <!--login section end-->
+           
+            <!--organicfood wrapper start--> 
+            <div class="footer_food_wrapper footer_register">         
+               <!-- footer start -->
                 <footer class="footer pt-90 my-account">
                     <div class="container-fluid">
                         <div class="row">
@@ -1016,132 +541,24 @@
                     </div>
                     
                 </footer>
-			</div>    
                 
                 <!-- footer end -->
                 
                 
                 
-         
+            </div>
+           
+           
+           
+           
            
            
            <!--organicfood wrapper end--> 
             
     
-            <!-- modal area start --> 
-           <div class="modal fade" id="my_modal" tabindex="-1" role="dialog"  aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="modal-body shop">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5 col-sm-12">
-                                        <div class="product-flags madal">  
-                                            <div class="tab-content" id="pills-tabContent">
-                                                <div class="tab-pane fade show active" id="imgeone" role="tabpanel" >
-                                                    <div class="product_tab_img">
-                                                        <a href="#"><img src="${pageContext.request.contextPath}/assets/img/cart/nav12.jpg" alt=""></a>    
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="imgetwo" role="tabpanel">
-                                                    <div class="product_tab_img">
-                                                        <a href="#"><img src="${pageContext.request.contextPath}/assets/img/cart/nav11.jpg" alt=""></a>    
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="imgethree" role="tabpanel">
-                                                    <div class="product_tab_img">
-                                                        <a href="#"><img src="${pageContext.request.contextPath}/assets/img/cart/nav13.jpg" alt=""></a>    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="products_tab_button  modals">    
-                                                <ul class="nav product_navactive" role="tablist">
-                                                    <li >
-                                                        <a class="nav-link active" data-toggle="tab" href="#imgeone" role="tab" aria-controls="imgeone" aria-selected="false"><img src="${pageContext.request.contextPath}/assets/img/cart/nav.jpg" alt=""></a>
-                                                    </li>
-                                                    <li>
-                                                         <a class="nav-link" data-toggle="tab" href="#imgetwo" role="tab" aria-controls="imgetwo" aria-selected="false"><img src="${pageContext.request.contextPath}/assets/img/cart/nav1.jpg" alt=""></a>
-                                                    </li>
-                                                    <li>
-                                                       <a class="nav-link button_three" data-toggle="tab" href="#imgethree" role="tab" aria-controls="imgethree" aria-selected="false"><img src="${pageContext.request.contextPath}/assets/img/cart/nav2.jpg" alt=""></a>
-                                                    </li>
-                                                </ul>
-                                            </div>    
-                                        </div>  
-                                    </div> 
-                                    <div class="col-lg-7 col-md-7 col-sm-12">
-                                        <div class="modal_right">
-                                            <div class="shop_reviews">
-                                                <div class="demo_product">
-                                                    <h2>Sprite Yoga Straps1</h2> 
-                                                </div>
-                                                <div class="current_price">
-                                                    <span class="regular">$64.99</span>    
-                                                    <span class="regular_price" >$78.99</span>    
-                                                </div>
-                                                <div class="product_information product_modal">
-                                                    <div id="product_modal_content">
-                                                        <p>Short-sleeved blouse with feminine draped sleeve detail.</p>    
-                                                    </div>
-                                                    <div class="product_variants">
-                                                        <div class="product_variants_item modal_item">
-                                                            <span class="control_label">Size</span>
-                                                            <select id="group_2">
-                                                                <option value="1">S</option>
-                                                                <option value="2" selected="selected">M</option>
-                                                                <option value="3">L</option>
-                                                            </select>    
-                                                        </div>   
-                                                        
-                                                       <div class="quickview_plus_minus">
-                                                            <span class="control_label">Quantity</span>
-                                                            <div class="quickview_plus_minus_inner">
-                                                                <div class="cart-plus-minus">
-                                                                    <input type="text" value="02" name="qtybutton" class="cart-plus-minus-box">
-                                                                </div>
-                                                               <div class="add_button add_modal">
-                                                                    <button type="submit"> Add to cart</button> 
-                                                                </div>
-                                                            </div>    
-                                                        </div> 
-                                                        
-                                                        <div class="cart_description">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>    
-                                                        </div> 
-                                                    </div>
-                                                </div>   
-                                            </div>    
-                                        </div>    
-                                    </div>    
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="social-share">
-                                            <h3>Share this product</h3>
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>    
-                                        </div>    
-                                    </div>    
-                                </div>     
-                            </div>
-                        </div>    
-                    </div>
-                </div>
-            </div> 
             
-    
-          <!-- modal area end --> 
-         
-        
-        
+  
+		
 		
 		<!-- all js here -->
         <script src="${pageContext.request.contextPath}/assets/js/vendor/jquery-1.12.0.min.js"></script>
@@ -1149,7 +566,6 @@
         <script src="${pageContext.request.contextPath}/assets/js/bootstrap.min.js"></script>
         <script src="${pageContext.request.contextPath}/assets/js/isotope.pkgd.min.js"></script>
         <script src="${pageContext.request.contextPath}/assets/js/imagesloaded.pkgd.min.js"></script>
-        <script src="${pageContext.request.contextPath}/assets/js/jquery-ui.js"></script>
         <script src="${pageContext.request.contextPath}/assets/js/jquery.counterup.min.js"></script>
         <script src="${pageContext.request.contextPath}/assets/js/waypoints.min.js"></script>
         <script src="${pageContext.request.contextPath}/assets/js/ajax-mail.js"></script>
